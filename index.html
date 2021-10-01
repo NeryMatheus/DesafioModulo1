@@ -1,0 +1,54 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Desafio Módulo 1</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <h1>Desafio Módulo 1</h1>
+
+    <div class="content-area">
+        <fieldset id="opt-content">
+            <legend>Opções de filtragem</legend>
+            <span>Ordenar por: </span>
+            <select name="sort" id="selectSort">
+                <option value="ascName" selected>Nome ascendente</option>
+                <option value="descName">Nome descendente</option>
+                <option value="ascSal">Salário ascendente</option>
+                <option value="descSal">Salário descendente</option>
+            </select>
+            <div id="filtering">
+                <span>Filtrar por:</span>
+            </div>
+        </fieldset>
+
+        <fieldset id="result-content">
+            <legend>Resultados <span id="counter"></span></legend>
+
+            <table id="tb">
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>Name</th>
+                        <th>Role</th>
+                        <th class="sal">Salary</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    
+                </tbody>
+            </table>
+            
+        </fieldset>
+        <div id="error">
+
+        </div>
+    </div>
+    
+
+    <script src="script.js"></script>
+</body>
+</html>
